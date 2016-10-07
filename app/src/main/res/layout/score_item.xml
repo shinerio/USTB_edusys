@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score_name"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="课程名"
+        android:textColor="#000080"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#98FB98"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+    <TextView
+        android:id="@+id/score_xueshi"
+        android:layout_alignParentLeft="true"
+        android:text="课程学时"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/score_type"
+            android:layout_alignParentRight="true"
+            android:text="课程类型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textColor="#CD0000"
+            android:id="@+id/score_num"
+            android:layout_alignParentLeft="true"
+            android:text="课程成绩"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/score_xuefen"
+            android:layout_alignParentRight="true"
+            android:text="课程学分"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

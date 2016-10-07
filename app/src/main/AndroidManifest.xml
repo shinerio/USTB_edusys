@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ustb.superui.ustbedu">
+
+    <!--网络连接权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--网络状态权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--手机振动权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Login" />
+        <activity android:name=".activity.Whatsnew" />
+        <activity android:name=".activity.Whatsnew_door" />
+        <activity android:name=".activity.Index" />
+        <activity
+            android:name=".activity.Exit_settings"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.SelfMessage_top_btn"
+            android:theme="@style/MyDialogStyleTop" />
+        <activity android:name=".activity.Shake" />
+        <activity
+            android:name=".activity.Exit"
+            android:theme="@style/MyExitDialog" />
+        <activity android:name=".activity.About_me" />
+        <activity android:name=".activity.Roll_answer" />
+        <activity android:name=".activity.show_class" />
+        <activity android:name=".activity.Term_list" />
+        <activity android:name=".activity.Score_list" />
+        <activity android:name=".activity.Score_byName"></activity>
+    </application>
+
+</manifest>
